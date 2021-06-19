@@ -6,7 +6,7 @@
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology.</p>
+        >Google Developer Student Clubs (GDSCs) are for student developers who are interested in Google's developer technology.</p>
         <p class="google-font" style="font-size:95%">About different Google technologies</p>
         <span v-for="(item,i) in whatwedodata" :key="i">
           <v-tooltip bottom>
