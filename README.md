@@ -9,8 +9,11 @@ GDSC 한국외대 챕터 홈페이지 <br>
 
 ## Overview
 
-본 웹페이지는 GDG Jalandhar 커뮤니티에서 제작한 Aura 웹 템플릿을 사용하여 제작/배포 하였습니다. <br>
+본 웹페이지는 GDG Jalandhar 커뮤니티에서 제작한 Aura 웹 템플릿을 사용하여 제작/배포 하였습니다.
+
 Aura is the Web App that helps you to mange the Tech Communities like GDGs, DSCs or any other tech communities with Aura Admin.
+
+The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) team experience of running meetups/events.
 
 ## Features
 | Feature | Description |
