@@ -15,6 +15,11 @@
         "link":"https://www.android.com/"
     },
     {
+        "TechName":"Flutter",
+        "image":"flutter.png",
+        "link":"https://www.flutter.dev/"
+    },
+    {
         "TechName":"Actions On Google",
         "image":"aog.png",
         "link":"https://developers.google.com/actions/"

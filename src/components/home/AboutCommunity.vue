@@ -17,7 +17,7 @@
               color
               class="ma-0 google-font mb-2"
               style="border-radius:5px;text-transform: capitalize;color:white"
-            >Meetup Page</v-btn>&nbsp;
+            >Events Page</v-btn>&nbsp;
             <br />
             <router-link
               to="/about"

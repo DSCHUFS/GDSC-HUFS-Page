@@ -29,7 +29,7 @@
               <p
                 class="google-font"
                 style="font-size:95%"
-              >Get updated with the latest news and announcements</p>
+              >커뮤니티 멤버들과 함께 기술적인 교류와 소통, 네트워킹 기회를 가져봐요!</p>
             </v-col>
             <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-code-tags</v-icon>
@@ -37,7 +37,7 @@
               <p
                 class="google-font"
                 style="font-size:95%"
-              >Get hands-on experience and guidance from the community members</p>
+              >함께 프로젝트와 실습을 진행하면서 실무 역량을 강화하고 다양한 기술들을 경험해봐요!</p>
             </v-col>
             <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-school</v-icon>
@@ -45,7 +45,7 @@
               <p
                 class="google-font"
                 style="font-size:95%"
-              >Share knowledge in different Companies, colleges and universities</p>
+              >다양한 여러 대학교, 회사, 커뮤니티, 그룹들과 지식을 공유해요!</p>
             </v-col>
             <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-chart-bubble</v-icon>
@@ -53,7 +53,7 @@
               <p
                 class="google-font"
                 style="font-size:95%"
-              >Share knowledge in different Companies, colleges and universities</p>
+              >다양한 구글 개발 커뮤니티의 행사, 이벤트, 세션, 워크샵 등을 함께 즐겨요!</p>
             </v-col>
           </v-row>
         </v-container>
