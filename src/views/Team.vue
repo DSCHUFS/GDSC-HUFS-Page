@@ -41,6 +41,15 @@
                 </v-col>
              </v-row>
         </v-container>
+
+        <v-container fluid class="pa-0" v-if="Members.length>0">
+             <v-row justify="center" align="center" class="py-3">
+                <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 ">
+                  <Members :data="Members"/>
+                </v-col>
+             </v-row>
+        </v-container>
+
         <v-container fluid class="pa-0">
              <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
                <v-col v-if="!loader && notFound && OrganizingTeam.length <=0 && CoreTeam.length<=0" md="12" lg="12" sm="12" cols="12" class="text-center">
@@ -73,12 +82,14 @@ export default {
     components:{
         TeamHeader:()=>import('@/components/team/TeamHeader'),
         CoreTeam:()=>import('@/components/team/CoreTeam'),
-        OrgainizingTeam:()=>import('@/components/team/OrganizingTeam')
+        OrgainizingTeam:()=>import('@/components/team/OrganizingTeam'),
+        Members:()=>import('@/components/team/Members')
     },
     data:() =>({
       loader:true,
       OrganizingTeam:[],
       CoreTeam:[],
+      Members: [],
       Volunteers:[],
       notFound:false,
       ErrorMsg:''
@@ -93,6 +104,7 @@ export default {
             if(res.success==true){
               this.OrganizingTeam = res.data.filter(res=>res.role=='Organizing Team' && res.visible )
               this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible )
+              this.Members = res.data.filter(res=>res.role=='Member' && res.visible )
               this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
               this.loader = false
               this.notFound = false
