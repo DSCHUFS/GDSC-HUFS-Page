@@ -65,7 +65,7 @@
             >
               {{ eventDetails.name }} Details
             </h1>
-            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.des }}</p>
+            <p class="google-font mb-3" style="font-size:110%" v-html="eventDes"></p>
 
             <span v-for="(item, i) in eventDetails.hashtags" :key="i">
               <v-chip
@@ -179,6 +179,9 @@ export default {
   name: "EventAbout",
   props: ["eventDetails"],
   computed: {
+    eventDes() {
+      return this.eventDetails.des.split("\n").join("<br>");
+    },
     ...mapState(["config"]),
   },
 };
