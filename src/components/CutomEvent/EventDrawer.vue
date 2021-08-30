@@ -67,26 +67,26 @@ export default {
         to: "/about",
         icon: "mdi-information-outline"
       },
+      // {
+      //   text: "Speakers",
+      //   to: "/speakers",
+      //   icon: "mdi-account-multiple-outline"
+      // },
       {
-        text: "Speakers",
-        to: "/speakers",
-        icon: "mdi-account-multiple-outline"
+        text: "Team",
+        to: "/team",
+        icon: "mdi-account-box-outline"
       },
       {
         text: "Schedule",
         to: "/schedule",
         icon: "mdi-television-guide"
-      },
-      {
-        text: "Partners",
-        to: "/partners",
-        icon: "mdi-currency-usd"
-      },
-      {
-        text: "Team",
-        to: "/team",
-        icon: "mdi-account-box-outline"
       }
+      // {
+      //   text: "Partners",
+      //   to: "/partners",
+      //   icon: "mdi-currency-usd"
+      // }
     ]
   }),
   computed: {
