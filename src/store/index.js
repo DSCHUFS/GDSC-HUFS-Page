@@ -47,7 +47,7 @@ export default new Vuex.Store({
         to: '/speakers',
         icon: 'mdi-assistant',
         meta: {
-          showToolbar: true,
+          showToolbar: false,
           showBottomNav: false
         },
       },
@@ -83,7 +83,7 @@ export default new Vuex.Store({
         to: '/blogs',
         icon: 'mdi-blogger',
         meta: {
-          showToolbar: true,
+          showToolbar: false,
           showBottomNav: false
         },
       }
