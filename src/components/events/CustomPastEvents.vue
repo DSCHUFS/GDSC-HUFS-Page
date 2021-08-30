@@ -10,7 +10,7 @@
                 <v-row>
                     <v-col md="6" lg="6" sm="6" cols="12">
                         <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
-                        <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
+                        <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed by date.</p>
                     </v-col>
                     <v-col md="6" lg="6" sm="6" cols="12">
                         <v-text-field
@@ -73,7 +73,7 @@ import { mapState } from 'vuex'
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Date', value: 'date' },
+                { text: 'Date',  value: 'date' },
                 { text: 'Venue', value: 'venue.name' },
                 { text: 'See More', value: 'action' },
             ],
@@ -87,6 +87,7 @@ import { mapState } from 'vuex'
                 service.getAllEvents().then(res=>{
                     if(res.success){
                         this.eventsData = res.data.filter(obj=>obj.visible==true)
+                        this.eventsData.sort((a,b)=>a.date < b.date?1:-1)
                         this.isLoading = false
                     }else{
                         this.isLoading = false
