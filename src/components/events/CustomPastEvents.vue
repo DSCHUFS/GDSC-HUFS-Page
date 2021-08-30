@@ -32,6 +32,8 @@
                     mobile-breakpoint="no"
                     :headers="headers"
                     :items="eventsData"
+                    :sort-by.sync="sortBy"
+                    :sort-desc.sync="sortDesc"
                     :loading="isLoading"
                     :items-per-page="5"
                     :class="$vuetify.theme.dark == true?'darkModeCard':'card-light'"
@@ -60,6 +62,8 @@ import { mapState } from 'vuex'
             ...mapState(["config"])
         },
         data: () => ({
+            sortBy: 'date',
+            sortDesc: true,
             eventsData:[],
             showData: false,
             isLoading: true,
@@ -87,7 +91,7 @@ import { mapState } from 'vuex'
                 service.getAllEvents().then(res=>{
                     if(res.success){
                         this.eventsData = res.data.filter(obj=>obj.visible==true)
-                        this.eventsData.sort((a,b)=>a.date < b.date?1:-1)
+                        // this.eventsData.sort((a,b)=>a.date < b.date?1:-1)
                         this.isLoading = false
                     }else{
                         this.isLoading = false
