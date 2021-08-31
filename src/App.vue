@@ -78,6 +78,7 @@ export default {
   mounted() {
     if (
       Object.keys(this.config.generalConfig).length <= 0 ||
+      Object.keys(this.config.curriculumConfig).length <= 0 ||
       Object.keys(this.config.keysandsecurity).length <= 0 ||
       Object.keys(this.config.footerConfig).length <= 0
     )
@@ -86,6 +87,7 @@ export default {
   methods: {
     ...mapMutations([
       "setGeneralConfig",
+      "setCurriculumConfig",
       "setKeysAndSecutityConfig",
       "setFooterConfig"
     ]),
@@ -109,6 +111,7 @@ export default {
           res.data.forEach(ele => {
             if (ele.name == "footer") this.setFooterConfig(ele.data.links);
             else if (ele.name == "general") this.setGeneralConfig(ele.data);
+            else if (ele.name == "curriculum") this.setCurriculumConfig(ele.data);
             else if (ele.name == "keysandsecurity")
               this.setKeysAndSecutityConfig(ele.data);
           });

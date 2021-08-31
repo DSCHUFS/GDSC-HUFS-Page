@@ -41,9 +41,18 @@
       </v-row>
     </v-container>
 
-     <v-container fluid class="pa-0 py-2 " >
+         <v-container fluid class="pa-0 py-2 " >
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" xs="12" class="py-0">
+          <curriculum />
+        </v-col>
+      </v-row>
+    </v-container>
+
+
+     <v-container fluid class="pa-0 py-2 " >
+      <v-row justify="center" align="center">
+        <v-col md="12" lg="10" xs="12" class="py-0" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
           <partners />
         </v-col>
       </v-row>
@@ -72,7 +81,8 @@ export default {
     AboutCommunity:()=>import('@/components/home/AboutCommunity'),
     events:()=>import('@/components/home/Events'),
     featureEvents:()=>import('@/components/home/FeaturesEvents'),
-    partners:()=>import('@/components/common/Partners')
+    partners:()=>import('@/components/common/Partners'),
+    curriculum:()=>import('@/components/home/Curriculum')
   },
   data:()=>({
     showFeatureEventStatus:false

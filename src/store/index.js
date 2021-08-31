@@ -12,6 +12,7 @@ export default new Vuex.Store({
       generalConfig: {
         socialLinks:{}
       },
+      curriculumConfig: {},
       keysandsecurity: {},
       footerConfig: {},
     },
@@ -100,6 +101,7 @@ export default new Vuex.Store({
     setEventDrawer: (state, payload) => (state.eventDrawer = payload),
     toggleEventDrawer: state => (state.eventDrawer = !state.eventDrawer),
     setGeneralConfig: (state, payload) => (state.config.generalConfig = payload),
+    setCurriculumConfig: (state, payload) => (state.config.curriculumConfig = payload),
     setKeysAndSecutityConfig: (state, payload) => (state.config.keysandsecurity = payload),
     setFooterConfig: (state, payload) => (state.config.footerConfig = payload),
   },

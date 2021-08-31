@@ -17,6 +17,18 @@
       </v-row>
     </v-container>
 
+    <!-- <v-container fluid class="px-0 pt-5 mt-5 py-0">
+      <v-row justify="center" align="center">
+        <v-col md="11" lg="10" sm="11" xs="12" class="pt-3">
+              <p class="google-font mb-0" style="font-weight: 350;font-size:200%"><b>
+                    <span style="color: #1a73e8;">GDSC Solution Challenge</span> </b> 
+                </p>        
+                </v-col>
+                
+      </v-row>
+    </v-container> -->
+
+
     <v-container fluid class="pa-0 py-0 my-0">
       <v-row
         justify="center"
